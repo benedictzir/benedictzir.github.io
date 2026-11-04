@@ -1,6 +1,5 @@
 name: Publish portfolio to GitHub Pages
 
-# Manual until the owner chooses the repository and enables Pages.
 on:
   workflow_dispatch:
 

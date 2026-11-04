@@ -223,65 +223,6 @@ new IntersectionObserver(
   { threshold: 0.1 },
 ).observe(sticker);
 
-// A decorative loop supplements the complete, stationary technology inventory.
-const techReel = document.querySelector("[data-tech-reel]");
-let reelVisible = false;
-let reelPaused = false;
-const reelTrack = document.createElement("span");
-reelTrack.className = "tech-reel-track";
-reelTrack.setAttribute("aria-hidden", "true");
-const reelGroup = document.createElement("span");
-reelGroup.className = "tech-reel-group";
-const reelNames = [
-  "Python",
-  "Java",
-  "Django",
-  "Spring Boot",
-  "Flutter",
-  "Node.js",
-  "Godot",
-  "Figma",
-];
-const inventory = [...document.querySelectorAll(".tech-inventory > li")];
-for (const name of reelNames) {
-  const original = inventory.find(
-    (item) => item.querySelector("strong").textContent === name,
-  );
-  if (!original) continue;
-  const chip = document.createElement("span");
-  chip.className = "tech-reel-chip";
-  const label = document.createElement("span");
-  label.textContent = name;
-  chip.append(original.querySelector("img").cloneNode(), label);
-  reelGroup.append(chip);
-}
-reelTrack.append(reelGroup, reelGroup.cloneNode(true));
-const reelWindow = document.createElement("span");
-reelWindow.className = "tech-reel-window";
-reelWindow.append(reelTrack);
-techReel.append(reelWindow);
-techReel.hidden = false;
-function syncReel() {
-  techReel.dataset.running = String(
-    reelVisible && !reelPaused && !reduced() && !document.hidden,
-  );
-  techReel.setAttribute("aria-pressed", String(reelPaused));
-  techReel.title = reelPaused
-    ? "Resume moving tech icons"
-    : "Pause moving tech icons";
-}
-techReel.addEventListener("click", () => {
-  reelPaused = !reelPaused;
-  syncReel();
-});
-new IntersectionObserver(
-  ([entry]) => {
-    reelVisible = entry.isIntersecting;
-    syncReel();
-  },
-  { threshold: 0.1 },
-).observe(techReel);
-
 const milestoneObserver = new IntersectionObserver(
   (entries) => {
     for (const entry of entries) {
@@ -346,12 +287,10 @@ menuButton.addEventListener("click", queuePageMotion);
 motionQuery.addEventListener("change", () => {
   stopFilterMotion();
   syncSticker();
-  syncReel();
   queuePageMotion();
 });
 document.addEventListener("visibilitychange", () => {
   syncSticker();
-  syncReel();
   if (document.hidden) {
     stopFilterMotion();
     cancelAnimationFrame(pageFrame);
