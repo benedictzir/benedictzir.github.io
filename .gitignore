@@ -1,0 +1,17 @@
+.agents/
+.claude/
+skills-lock.json
+_site/
+__pycache__/
+.DS_Store
+Thumbs.db
+
+# Local authoring and verification files; not needed by the website.
+/tools/
+/data/
+/browser-test.cjs
+/test.mjs
+/docs/
+/PRODUCT.md
+/assets/research/
+
