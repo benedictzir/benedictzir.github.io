@@ -4,8 +4,6 @@ Downloaded 3 November 2026 for identifying the organizations in the owner's veri
 
 - ristek.png: RISTEK Fasilkom UI's public LinkedIn company-logo image, discovered from the og:image field of https://www.linkedin.com/company/ristek-fakultas-ilmu-komputer-universitas-indonesia. 200 x 200, original image pixels saved as PNG. The public company page links its official site, https://www.ristek.cs.ui.ac.id/. Used for the two RISTEK roles.
 - universitas-indonesia.png: https://cil.ui.ac.id/marketplace/theme/images/logo-ui.png, linked as logo-ui by https://cil.ui.ac.id/marketplace/login. Original transparent 277 x 300 PNG from Universitas Indonesia's own domain. Used for the UI teaching-assistant role.
-- mr-diy-symbol.png: https://corporate-id.mrdiy.com/assets-frontend/images/favicon.png, the original circular corporate mark linked by https://corporate-id.mrdiy.com/. Used for the paid project role.
-- mr-diy.png: full wordmark from https://corporate-id.mrdiy.com/assets-frontend/images/logo-mrdiy-new.png. Retained as a sourced alternative; the compact original symbol is used in the experience row for legibility.
 
 LinkedIn is only a public source here; no authentication, account or profile modifications were performed.
 
