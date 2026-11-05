@@ -261,7 +261,7 @@ details[open] > summary > img,
 #site-nav a[aria-current]::after {
   transform: scaleX(1);
 }
-.nav-resume {
+.nav-cv {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -271,11 +271,11 @@ details[open] > summary > img,
   font-size: 12px;
   margin-left: 14px;
 }
-.nav-resume img {
+.nav-cv img {
   filter: var(--icon-filter);
   opacity: 0.8;
 }
-.nav-resume:hover {
+.nav-cv:hover {
   background: var(--cover-hover);
 }
 .menu-toggle {
@@ -1480,7 +1480,7 @@ html[data-motion="reduced"] {
   .nav-inner {
     gap: 18px;
   }
-  .nav-resume {
+  .nav-cv {
     margin-left: 0;
   }
   .hero-layout {
@@ -1563,7 +1563,7 @@ html[data-motion="reduced"] {
     display: flex;
     margin-left: auto;
   }
-  .nav-resume {
+  .nav-cv {
     font-size: 11px;
     padding: 7px 10px;
   }
@@ -2049,7 +2049,7 @@ html[data-motion="reduced"] {
   .hero h1 {
     font-size: 59px;
   }
-  .nav-resume {
+  .nav-cv {
     font-size: 10px;
     gap: 6px;
   }
@@ -2788,7 +2788,7 @@ img[src^="assets/icons/"] {
     padding: 12px 0 0;
     border: 0;
   }
-  .nav-resume {
+  .nav-cv {
     font-size: 11px;
     padding: 7px 10px;
     margin-left: 0;

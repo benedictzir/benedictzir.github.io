@@ -14,9 +14,9 @@ Open http://127.0.0.1:4173/. Use Ctrl+F5 after an update.
 
 - `index.html`: main content and navigation.
 - `styles.css`, `work.css`, `theme.css`: layout, interactions and light/dark tokens.
-- `script.js`, `projects.js`, `theme.js`: navigation/folders, image and resume dialogs, theme preference.
+- `script.js`, `projects.js`, `theme.js`: navigation/folders, image viewer, theme preference.
 - `assets/`: active media plus required licenses and provenance. The Phare gameplay PNG is the owner's unchanged supplied image.
-- `resume.html`: the resume shown in the website's preview dialog. Both PDF downloads are in `assets/`.
+- The navbar and footer download `assets/Benedictus-Ziraluo-CV.pdf` directly.
 
 ## Deploy
 
